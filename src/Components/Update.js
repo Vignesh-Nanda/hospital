@@ -143,7 +143,7 @@ const Update = () => {
                                     id="Gen"
                                     label="Gender"
                                     name="gen"
-                                    // value={hospital.gen}
+                                    value={hospital.gen}
                                     onChange={(event) => handleChange(event)}
                                     autoComplete="Gender"
                                 />

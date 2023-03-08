@@ -12,8 +12,7 @@ import { useNavigate } from "react-router-dom";
 import Services from '../Service/Services';
 import { IconButton } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
-import Update from './Patientdetails';
-import Patientdetails from './Patientdetails';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
         backgroundColor: theme.palette.common.black,
@@ -115,7 +114,7 @@ export default function Patient() {
                                 onClick={(e, id) => eventEdit(e, ele.id)}
                                 size="small"
                             >
-                                <DeleteIcon />
+                                <VisibilityIcon />
                             </IconButton >
                             <IconButton
                                 name={ele.id}
